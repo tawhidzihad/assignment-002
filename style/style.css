@@ -31,10 +31,15 @@
     color: rgba(255, 255, 255, 1);
 }
 
+/* Background color */
+.bg_color{
+    background-color: #1A0B2E;
+}
+
 /* For Max-width */
 .width_max{
     max-width: 1140px;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 /* For Display Flex  */
@@ -182,6 +187,50 @@ header{
 }
 /* Banner Section Styles End */
 
+/* About the podcast Start */
+.podcast_container{
+    text-align: center;
+    padding: 1.875rem;
+}
+
+.podcast_text{
+    max-width: 70%;
+    margin: 0px auto 3rem;
+}
+
+.podcast_text  .title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.9rem ;
+}
+
+.podcast_text .para_1{
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.podcast_showoff{
+    border-top: 0.1px solid rgba(255, 255, 255, 0.342); ;
+    padding: 3.125rem 0 3.125rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 100px);
+    text-align: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.podcast_showoff h2{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.podcast_showoff p{
+    text-transform: uppercase;
+    line-height: 20px;
+}
+/*  About the podcast End */
+
 
 
 /* Query For Small Device */
@@ -201,13 +250,17 @@ header{
     }
 
     .circle_image{
-        margin-bottom: 7px;
+        margin-bottom: -103px;
         width: 200px;
     }
 
     .microphone_image{
         top: 100px;
         width: 65px;
+    }
+
+    .text_box{
+        padding: 1.25rem;
     }
 
     .text_box h2{
@@ -224,6 +277,38 @@ header{
         font-size: 1rem;
     }
     /* Header Navbar + Banner Ends */
+
+    /* Podcast Section Start */
+    .podcast_container{
+
+        padding: 0px;
+    }
+
+    .podcast_text{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .podcast_text  .title{
+        font-size: 2rem;
+    }
+    
+    .podcast_text .para_1{
+        line-height: 20px;
+    }
+
+    .podcast_text .para_2{
+        margin-bottom: 50px;
+    }
+
+    .podcast_showoff{
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    /* About Podcast Section End */
+
+
 }
 
 
@@ -232,6 +317,13 @@ header{
     .hamburger{
         display: none;
     }
+
+    .podcast_container .podcast_showoff{
+        max-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
 }
 
 
