@@ -316,6 +316,59 @@ header{
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
 }
+/* Why Choose TechWave End */
+
+/* Featured Episodes Start */
+.episode_container{
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.episode_container .epi_title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card_container{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    background-color: #250D44;
+    border-radius: 24px;
+}
+
+.card_video iframe{
+    width: 100%;
+    height: 175px;
+    border-top: 1px solid rgb(155, 76, 76);
+    border-radius:30px 30px 0px 0px;
+}
+
+.card .card_text{
+    padding: 20px 20px 30px 20px;
+    text-align: left;
+}
+
+.card_text h3{
+    margin-bottom: 15px;
+}
+
+.card_text p{
+    margin-bottom: 15px;
+}
+
+.image_text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Featured Episodes End */
 
 
 /* Query For Small Device */
@@ -425,7 +478,30 @@ header{
     }
     /* Why Choose TechWave Section End */
 
+    /* Featured Episodes Star */
+    .episode_container .epi_title{
+        font-size: 2rem;
+    }
+
+    .card_container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card{
+        width: 90%;
+        height: auto;
+    }
+
+    .card_video iframe{
+        width: 100%;
+        height: 200px;
+    }
 }
+    /* Featured Episodes End */
+
+
+
 
 
 /* Query For Medium Device */
@@ -439,12 +515,11 @@ header{
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
-
 }
 
 
 /* Query For Desktops */
-@media screen and (min-width:992px) {
+@media screen and (min-width:992px){
     .hamburger{
         display: none;
     }
