@@ -51,7 +51,10 @@
 /* Main Styles */
 /* Navbar Styles */
 header{
-    background-color: #1A0B2E;
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
     padding-top: 5px;
 }
 
@@ -91,14 +94,7 @@ header{
     cursor: pointer;
 }
 
-/* Banner Section Styles */
-.banner_bg{
-    background-image: url(../assets/hero-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+/* Banner Section Styles Start*/
 .banner_container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 400px);
@@ -110,6 +106,7 @@ header{
     grid-row: auto;
     position: relative;
 }
+
 .text_box{
     grid-column: span 3;
     grid-row: auto;
@@ -119,6 +116,14 @@ header{
 .circle_image{
     margin-bottom: -200px ;
     max-width: 100% ;
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 10px #F7E93F}
+    50%{box-shadow:0 0 30px #9100F8}
+    100%{box-shadow:0 0 10px #FB09B4}
 }
 
 .badge{
@@ -175,6 +180,7 @@ header{
 #highlight_btn:hover{
     transform: scale(0.9);
 }
+/* Banner Section Styles End */
 
 
 
@@ -195,16 +201,27 @@ header{
     }
 
     .circle_image{
-        width: 250px;
+        margin-bottom: 7px;
+        width: 200px;
     }
 
     .microphone_image{
-        top: 230%;
-        width: 90px;
+        top: 100px;
+        width: 65px;
     }
-    
-    .text_box{
-        margin-top: 50px;
+
+    .text_box h2{
+        font-size: 2.7rem;
+        font-weight: 700;
+    }
+
+    .text_box p{
+        margin-bottom: 1rem;
+    }
+
+    .badge{
+        top: 10px;
+        font-size: 1rem;
     }
     /* Header Navbar + Banner Ends */
 }
