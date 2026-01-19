@@ -231,6 +231,91 @@ header{
 }
 /*  About the podcast End */
 
+/* Why Choose TechWave Star */
+.choose_tech_wave{
+    background-color: #230E3D;
+    color: #FFFFFF;
+}
+
+.tech_wave_container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.tech_wave_container .head_text{
+    margin-bottom: 1.875rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.complex_container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+}
+
+.complex_container h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.complex_container .content_1{
+    padding: 100px 20px;
+    grid-row: span 2;
+    text-align: left;
+    align-self: center;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+
+}
+
+.complex_container .content_2{
+    grid-column: span 2;
+    padding: 26px;
+    text-align: left;
+    align-self: center;
+
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+.complex_container .content_3{
+    grid-column: span 2;
+    padding: 26px;
+    text-align: left;
+    align-self: center;
+
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    
+}
+
+.complex_container .content_4{
+    grid-column: span 2;
+
+    padding: 18px;
+    text-align: left;
+    align-self: center;
+
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    
+}
+
+.complex_container .content_5{
+    padding: 27px;
+    margin-bottom: 20px ;
+    grid-row: span 2;
+    text-align: left;
+    align-self: center;
+
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
 
 
 /* Query For Small Device */
@@ -305,9 +390,42 @@ header{
         max-width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        margin:0px 10px;
     }
     /* About Podcast Section End */
 
+    /* Why Choose TechWave Section Start */
+    .complex_container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 200px);
+    }
+
+    .tech_wave_container .head_text{
+        font-size: 2rem;
+    }
+
+    .complex_container .content_1{
+        margin-left: 20px;
+    }
+
+    .complex_container .content_2{
+        padding: 30px;
+        margin:0px 20px;
+    }
+    .complex_container .content_3{
+        padding: 30px;
+        margin:0px 20px ;
+    }
+    .complex_container .content_4{
+        padding: 30px;
+        margin:0px 20px;
+    }
+    .complex_container .content_5{
+        margin-left: 20px ;
+    }
+    /* Why Choose TechWave Section End */
+
+    
 
 }
 
