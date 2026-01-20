@@ -643,6 +643,10 @@ footer{
     height: 220px;
     }
 
+    .last_para{
+        font-size: 12px;
+    }
+
     .last_container{
         width: 70%;
     }
