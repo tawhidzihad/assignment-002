@@ -440,6 +440,49 @@ header{
 }
 /* Meed Our Host End */
 
+/* Footer Section Start */
+footer{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.last_container{
+    position: absolute;
+    text-align: center;
+    width: 600px;
+}
+
+.last_container h1{
+    font-size: 4rem;
+}
+
+.platforms{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.platforms .links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.last_para{
+    position: absolute;
+    top: 79%;
+}
+/* Footer Section End */
+
+
 
 
 /* Query For Small Device */
@@ -595,9 +638,26 @@ header{
     }
     /* Meed Our Host End */
 
-}
-    
+    /* Footer Section Start */
+    footer{
+    height: 220px;
+    }
 
+    .last_container{
+        width: 70%;
+    }
+
+    .last_container h1{
+    font-size: 2rem;
+    }
+
+    .platforms{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    /* Footer Section End */
+}
 
 
 /* Query For Medium Device */
